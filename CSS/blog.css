@@ -1,0 +1,168 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 25px auto;
+  grid-template-areas:
+  "hd"
+  "nav"
+  "main";
+  grid-gap: 5px;
+  justify-items: center;
+  font-family: Avenir Next, Arial, sans-serif;
+  margin: 5px 0px;
+}
+
+header {
+  grid-area: hd;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 5px;
+}
+
+h1 {
+  letter-spacing: 10px;
+  margin: 3px 0px;
+  font-size: 50px;
+  font-weight: 640;
+  line-height: 100%;
+}
+
+h2 {
+  font-weight: 250;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #b1b1b1;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h4 {
+  margin: auto;
+}
+
+h5 {
+  margin: auto;
+  font-size: 1.25em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#blogName {
+  color: rgba(211, 211, 211, 0.95);
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-weight: 640;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+#navbar {
+  grid-area: nav;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(211, 211, 211, 0.95);
+}
+
+#navbar a {
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: block;
+  color: #242222;
+  background-color: rgba(211, 211, 211);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+    background: whitesmoke;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + body {
+  padding-top: 40px;
+}
+
+#social {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+}
+
+#social img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+#social a {
+  padding: 6px 15px;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 26px;
+  max-width: 750px;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.date {
+  margin: auto;
+  color: #b1b1b1;
+}
+
+main p {
+  color: rgb(40, 40, 40);
+  line-height: 26px;
+  margin: 26px 0px;
+  text-align: justify;
+}
+
+main img {
+  width: 100%
+}
+
+ul {
+  color: rgb(40, 40, 40);
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: auto;
+}
+
+footer {
+  margin: 50px;
+}

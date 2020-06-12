@@ -1,0 +1,108 @@
+body {
+  padding: 80px;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Avenir Next, Arial, sans-serif
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  letter-spacing: 10px;
+  margin: 3px 0px;
+  font-size: 50px;
+  font-weight: 640;
+  line-height: 100%;
+}
+
+h2 {
+  font-weight: 250;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #b1b1b1;
+}
+
+h3 {
+  font-size: x-large;
+  text-align: center;
+  margin: auto;
+  line-height: 32px;
+}
+
+h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b1b1b1;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 24px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 40px;
+}
+
+.nav-button {
+  margin: 20px;
+}
+
+main {
+  min-width: 300px;
+  max-width: 535px;
+  margin: 0% 10%;
+}
+
+img {
+  width: 100%
+}
+
+.blog-post {
+  display: block;
+  min-width: 400px;
+  max-width: 760px;
+  line-height: 26px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:active {
+  color: black;
+}
+
+p {
+  color: rgb(40, 40, 40);
+  line-height: 26px;
+  margin: 26px 0px;
+}
+
+ul {
+  color: rgb(40, 40, 40);
+}
+
+li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam Rigall Blog</title>
+  <link rel="stylesheet" href="CSS/blog.css">
+</head>
+
+<body>
+  <header>
+    <a name="top"></a>
+    <h1>bold and underlined</h1>
+    <h2>thoughts on living with purpose and passion</h2>
+  </header>
+  <div id="navbar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active">Posts</a>
+      <a href="subscribe.html">Subscribe</a>
+    </nav>
+    <div id="blogName">
+      Bold and underlined
+    </div>
+    <div id="social">
+      <a href="https://www.facebook.com/samantha.paul.315/timeline?lst=68602629%3A505774288%3A1591573312" target="_blank">
+        <img src="Images/facebook.png" alt="facebook icon">
+      </a>
+      <a href="https://www.instagram.com/samrigall/" target="_blank">
+        <img src="Images/instagram.png" alt="instagram icon">
+      </a>
+      <a href="https://www.linkedin.com/in/samantharigall/">
+        <img src="Images/linkedin.png" alt="linkedin icon">
+      </a>
+    </div>
+  </div>
+  <main>
+    <h3>Don’t Talk While Hungry (and Other Marriage Lessons)</h3>
+    <div class="date">March 7, 2019</div>
+    <p>
+      Today, it’s been six months since Dan and I got married.
+      I haven’t written anything in awhile, because my brain and
+      heart have just been too full - full of wedding plans, apartment set up,
+      and many transition-related feelings. It was just too much to sift through,
+      and while I planned to start blogging again in the fall during my break
+      from school, as usual that turned out to be a little too ambitious.
+      Will I ever learn? Probably not. It’s fine. IT’S FINE.
+    </p>
+    <img src="Images/Sam&DanWedding-473.jpg" alt="wedding photo">
+    <p>
+      I’ve spent a lot of time listening to Emily P. Freeman’s podcast,
+      <a href="https://emilypfreeman.com/podcast/" target="_blank">
+      The Next Right Thing</a>, over the past year. She shares a lot of thoughts
+      about creating space for your soul to breathe - something that fits well
+      with many of the things that have been happening in my own heart
+      for the past few years. In some of my posts from almost two years ago,
+      I wrote about
+      <a href="http://samrigall.com/blog/2017/4/8/lessons-on-love-from-hogwarts">
+      how I’m learning to rest</a>. Of course, at the start of this
+      journey, I thought I would be an expert at rest in approximately
+      three months. Maybe four, tops. But like most things, it takes time.
+    </p>
+    <p>
+      In the podcast, one thing Emily emphasizes is the importance of stopping
+      to reflect. She writes a post called “What I’ve Learned” four times
+      per year - once in the Spring, once in the Summer, once in the Fall,
+      and once in the Winter.
+    </p>
+    <p>
+      This is something that I’m hoping to start doing fairly soon.
+      For now, I thought I would apply it to our first six months of marriage.
+      This is by no means an exhaustive list, but I wanted to write down
+      some thoughts in the hope that I can come back and read it six months
+      from now, a year from now - whenever it might be needed.
+    </p>
+    <ul>
+      <li>
+        Don’t talk about serious things when one or both of you are hungry (I think the reasoning behind this is
+        self-explanatory).
+      </li>
+      <li>
+        It’s okay to have interests that are different (in reference to my repeated attempts to make Dan like the same TV shows
+        as me).
+      </li>
+      <li>
+        Meal planning on the weekend is hard, but really makes the week so much smoother and more enjoyable (refer to the first
+        point above).
+      </li>
+      <li>
+        We are both stubborn, and want to be in control (myself probably more than Dan), and marriage reveals this more than I’m
+        comfortable with. Thankfully, we don’t have to try and have a perfect marriage, and we don’t have to do it alone.
+      </li>
+      <li>
+        Regular connection with goods friends is just as important as it always has been.
+      </li>
+    </ul>
+    <p>
+      So, that’s it. Nothing earth shattering, or new, really. But I’m grateful for these lessons, and for all the lovely
+      people who have made these months special.
+    </p>
+    <p>
+      When it comes to rest, a concept that has been challenging for me for many years, no one has taught me more than Dan. He
+      helps me rest in so many ways, and that has been the greatest gift of the past six months.
+    </p>
+    <p>
+      Also, he makes me waffles.
+    </p>
+    <p>
+      Below are some wedding photos, since I never really posted any. Thank you to everyone who has been so supportive and
+      loving toward us! We are so grateful for you.
+    </p>
+    <p>
+      PS: If you want my list of meal prep recipes, you can download it <a href="http://samrigall.com/s/Recipe-List.xlsx">here</a>!
+    </p>
+    <!-- TODO: add photos?? -->
+  </main>
+  <aside>
+    <!-- Does this need to be here?? -->
+  </aside>
+  <footer>
+    <a href="#top">Back to top</a>
+    <!-- TODO: 'like' button w/ functionionality -->
+    <!-- TODO: 'comment' button & section w/ functionionality -->
+    <!-- TODO: Add 'Older Posts' & 'Newer Posts' buttons -->
+  </footer>
+
+  <script>
+    window.onscroll = function () { stickyNav() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    var blogName = document.getElementById("blogName");
+
+    function stickyNav() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        blogName.style.color = "black";
+      } else {
+        navbar.classList.remove("sticky");
+        blogName.style.color = "rgba(211, 211, 211, 0.95)";
+      }
+    }
+  </script>
+</body>
+
+</html>
