@@ -149,6 +149,7 @@ main {
   overflow: hidden;
   position: relative;
   padding: 10px;
+  margin: 10px 0px;
 }
 
 .card:hover img {
@@ -177,7 +178,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  filter: blur(3px) grayscale(60%) opacity(0.9);
+  filter: blur(3px) grayscale(70%) opacity(0.9);
 }
 
 .date {
