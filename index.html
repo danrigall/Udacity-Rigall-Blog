@@ -20,6 +20,9 @@
       <a href="gallery.html">Gallery</a>
       <a href="subscribe.html">Subscribe</a>
     </nav>
+    <button href="javascript:void(0);" id="hamburger" onclick="goHamburger()">
+      <img src="Images/menu-outline.svg" alt="hamburger menu">
+    </button>
     <div id="blogName">
       Bold and underlined
     </div>
@@ -35,6 +38,25 @@
       </a>
     </div>
   </div>
+  <aside>
+    <div class="about">
+      <img src="Images/SamProfile.jpg" alt="Samantha's profile picture">
+      <p>
+        Hi! I'm Sam (Samwise, Samster, and Samus are also acceptable).
+        There's really no non-awkard way to describe oneself,
+        but I gave it a try below. You can also read more about why
+        I started this blog here.
+      </p>
+      <p>
+        Lover of God, people, comedy, coffee, and honest conversation.
+        Director of Marketing at a wonderfully dynamic tech
+        startup called <a href="http://www.cotribute.com/" target="_blank">
+          Co.tribute</a>. Really into Jimmy Fallon, grilled cheese sandwiches,
+        New York City, and rainy days. Passionate about making a difference
+        and helping others realize they can do the same.
+      </p>
+    </div>
+  </aside>
   <main>
     <a class="card" href="Blog3-7-19.html">
       <img src="Images/Sam&DanWedding-473.jpg" alt="wedding photo">
@@ -47,43 +69,59 @@
         and many transition-related feelings. It was just too much to sift through,
         and while I planned to start blogging again in the fall during my break
         from school, as usual that turned out to be a little too ambitious.
-        Will I ever learn? Probably not. It’s fine. IT’S FINE.<br>(click to continue reading...)
+        Will I ever learn? Probably not. It’s fine. IT’S FINE.
+        <br>(click to continue reading...)
       </p>
     </a>
     <a class="card" href="Blog8-16-17.html">
       <img src="Images/HP_img1.jpeg" alt="Harry Potter Land with cousins">
-      <h3>Don’t Talk While Hungry (and Other Marriage Lessons)</h3>
+      <h3>Life, Liberty, and the Pursuit of Habitness</h3>
       <div class="date">August 16, 2017</div>
       <p>
-          Okay, peeps. I promised myself that I would not dedicate any more posts to Harry Potter after the last one, because of
-          social norms. But he might make a cameo at some point in the near future. WHO KNOWS. For now I’ll just tell you that I
-          may have chased down a random employee at Universal who I *thought* was dressed as Harry (so that my little cousin could
-          take a pic with him), but it turned out to be just a dude who works there with glasses.<br>(click to continue reading...)
+          Okay, peeps. I promised myself that I would not dedicate any more
+          posts to Harry Potter after the last one, because of social norms.
+          But he might make a cameo at some point in the near future. WHO KNOWS.
+          For now I’ll just tell you that I may have chased down a random
+          employee at Universal who I *thought* was dressed as Harry
+          (so that my little cousin could take a pic with him), but it turned
+          out to be just a dude who works there with glasses.
+          <br>(click to continue reading...)
+      </p>
+    </a>
+    <a class="card" href="">
+      <img src="Images/LOVE_img1.jpeg" alt="flower painting station">
+      <h3>Lessons on Love (from Hogwarts)</h3>
+      <div class="date">April 08, 2017</div>
+      <p>
+        Two weeks ago, I made a promise to Lisa Blair. We decided that we would
+        each post something on our blogs by that Monday. Lisa, of course,
+        stayed true to her word and posted some lovely thoughts right on time.
+        I, however, procrastinated, lamented about my lack of creativity,
+        pretended to study for my Finance midterm, and clicked repeatedly on
+        articles with titles like “Must-Have Spring Shoes for Every Budget.”
+        <br>(click to continue reading...)
+      </p>
+    </a>
+    <a class="card" href="">
+      <img src="Images/REALLY_img1.jpeg" alt="girl holding lantern">
+      <h3>Can we (really) celebrate 2016?</h3>
+      <div class="date">December 13, 2016</div>
+      <p>
+        Well hello there, all of you lovely Internet people. It’s been awhile.
+        Mostly because business school has been pounding me into the ground
+        a bit, but also because I haven’t been feeling particularly inspired.
+        I kept starting posts and promptly deleting them, going to the kitchen
+        for a snack, or getting distracted by Stranger Things. I would then
+        proceed to dramatically text a friend about how I probably have ADD and
+        will never succeed at life. But I digress.
+        <br>(click to continue reading...)
       </p>
     </a>
   </main>
-  <aside>
-    <div class="about">
-      <img src="Images/SamProfile.jpg" alt="Samantha's profile picture" width="100%">
-      <p>
-        Hi! I'm Sam (Samwise, Samster, and Samus are also acceptable).
-        There's really no non-awkard way to describe oneself,
-        but I gave it a try below. You can also read more about why I started this blog
-        <a href="http://www.samanthapaul.com/blog/why-i-decided-to-start-blogging">here.</a>
-      </p>
-      <p>
-        Lover of God, people, comedy, coffee, and honest conversation.
-        Director of Marketing at a wonderfully dynamic tech
-        startup called <a href="http://www.cotribute.com/" target="_blank">Co.tribute</a>.
-        Really into Jimmy Fallon, grilled cheese sandwiches, New York City, and rainy days.
-        Passionate about making a difference and helping others realize they can do the same.
-      </p>
-    </div>
-  </aside>
   <footer>
     <a href="#top">Back to top</a>
   </footer>
-  <!-- <script>
+  <script>
     window.onscroll = function () { stickyNav() };
 
     var navbar = document.getElementById("navbar");
@@ -99,7 +137,16 @@
         blogName.style.color = "rgba(211, 211, 211, 0.95)";
       }
     }
-  </script> -->
+// TODO: Make this hamburger menu work!!!
+    // function goHamburger() {
+    //   var nav = document.getElementsByClassName(".nav");
+    //   if (nav.style.display === "block") {
+    //     nav.style.display = "none";
+    //   } else {
+    //     nav.style.display = "block";
+    //   }
+    // }
+  </script>
 </body>
 
 </html>
