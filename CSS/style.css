@@ -10,14 +10,15 @@ body {
   font-family: Avenir Next, Arial, sans-serif;
   padding: 0px;
   margin: 0px;
-  min-width: 700px;
+  min-width: 800px;
 }
-/* large screen starts at 700px */
+/* LARGE screen starts at 700px */
 
 header {
   grid-area: hd;
   text-align: center;
   text-transform: uppercase;
+      padding: 10px;
 }
 
 h1 {
@@ -60,15 +61,25 @@ h5 {
   z-index: 1;
   background-color: rgba(211, 211, 211, 0.95);
   display: flex;
+  justify-content: space-between;
 }
 
 nav {
   display: flex;
+  align-items: center;
   height: 100%;
 }
 
+nav a {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #242222 !important;
+  text-decoration: none;
+  padding: 7px;
+}
+
 #blogName {
-  color: rgba(211, 211, 211, 0.95);
+  color: black;
   letter-spacing: 4px;
   font-size: 16px;
   font-weight: 640;
@@ -76,9 +87,11 @@ nav {
   text-align: center;
   width: fit-content;
   margin: auto;
+  white-space: nowrap;
+  display: none;
 }
 
-#navbar a {
+/* #navbar a {
   font-size: 12px;
   letter-spacing: 2px;
   display: block;
@@ -87,7 +100,7 @@ nav {
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
-}
+} */
 
 #hamburger {
   padding: 0px !important;
@@ -115,15 +128,16 @@ nav {
 }
 
 .sticky + body {
-  padding-top: 40px;
+  padding-top: 90px;
 }
 
 #social {
   display: flex;
   justify-content: flex-end;
   height: 100%;
-  width: 250px;
-  padding-right: 24px;
+  width: 180px;
+  padding-right: 20px;
+  align-items: center;
 }
 
 #social img {
@@ -140,8 +154,7 @@ aside {
   font-style: italic;
   background-color: whitesmoke;
   overflow: hidden;
-  height: 100%;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .about {
@@ -149,7 +162,6 @@ aside {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 5px;
 }
 
 .about img {
@@ -157,7 +169,6 @@ aside {
 }
 
 .about p {
-  margin: inherit;
   font-size: 15px;
 }
 
@@ -165,7 +176,7 @@ main {
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 20px;
 }
 
 .card {

@@ -7,18 +7,19 @@ body {
   "nav"
   "sd"
   "main"
-  "foot";
-  grid-gap: 5px;
+  "ft";
   font-family: Avenir Next, Arial, sans-serif;
-  margin: 5px 0px;
+  padding: 0px;
+  margin: 0px;
   max-width: 480px;
 }
+/* SMALL screen ends at 480px */
 
 header {
   grid-area: hd;
   text-align: center;
   text-transform: uppercase;
-  margin: 0px 5px;
+      padding: 10px;
 }
 
 h1 {
@@ -54,8 +55,19 @@ h5 {
   font-size: 1.25em;
 }
 
+#navbar {
+  grid-area: nav;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  background-color: rgba(211, 211, 211, 0.95);
+  display: flex;
+}
+
 nav {
-  display: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 #blogName {
@@ -65,25 +77,13 @@ nav {
   font-weight: 640;
   text-transform: uppercase;
   text-align: center;
-  width: 100%;
-}
-
-#navbar {
-  grid-area: nav;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 32px;
-  z-index: 1;
-  background-color: rgba(211, 211, 211, 0.95);
+  width: fit-content;
+  margin: auto;
 }
 
 #navbar a {
   font-size: 12px;
   letter-spacing: 2px;
-  display: block;
   color: #242222;
   background-color: rgba(211, 211, 211);
   text-align: center;
@@ -122,7 +122,9 @@ nav {
 #social {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  height: 100%;
+  width: 240px;
+  padding-right: 24px;
 }
 
 #social img {
@@ -135,17 +137,17 @@ nav {
 }
 
 aside {
+  grid-area: sd;
   font-style: italic;
   background-color: whitesmoke;
-  padding: 8px;
   overflow: hidden;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .about {
   height: 100%;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -153,7 +155,6 @@ aside {
 
 .about img {
   height: 100px;
-  margin: 5px;
 }
 
 .about p {
@@ -161,14 +162,14 @@ aside {
   font-size: 15px;
   flex-basis: 66%;
   flex-grow: 1;
+  padding: 5px;
 }
 
 main {
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  padding: 1rem;
+  padding: 20px;
 }
 
 .card {
@@ -220,10 +221,10 @@ main {
   background-image: linear-gradient(to right, white 0%);
 }
 
-
-
 footer {
+  grid-area: ft;
   text-align: center;
+  padding: 20px;
 }
 
 a:link {

@@ -131,10 +131,10 @@
     function stickyNav() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        blogName.style.color = "black";
+        blogName.style.display = "initial";
       } else {
         navbar.classList.remove("sticky");
-        blogName.style.color = "rgba(211, 211, 211, 0.95)";
+        blogName.style.display = "none";
       }
     }
 // TODO: Make this hamburger menu work!!!
