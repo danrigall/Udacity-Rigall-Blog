@@ -175,6 +175,10 @@ footer {
   padding: 20px;
 }
 
+footer a {
+  padding: 0px 30px;
+}
+
 a:link {
   color: black;
 }
