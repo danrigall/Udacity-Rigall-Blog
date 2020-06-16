@@ -4,7 +4,7 @@
 @import url("mobAside.css") screen and (max-width: 480px);
 @import url("cardstyle.css");
 @import url("headstyle.css");
-
+/* SMALL screen ends at 480px */
 @media (max-width: 480px) {
   body {
     display: grid;
@@ -22,7 +22,7 @@
     max-width: 480px;
   }
 }
-
+/* LARGE screen starts at 481px (FOR NOW)*/
 @media (min-width: 481px) {
   body {
     display: grid;
@@ -39,7 +39,6 @@
     min-width: 800px;
   }
 }
-/* LARGE screen starts at 700px */
 
 /* header {
   grid-area: hd;

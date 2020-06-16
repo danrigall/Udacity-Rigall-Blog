@@ -15,13 +15,16 @@
     <h2>thoughts on living with purpose and passion</h2>
   </header>
   <div id="navbar">
-    <nav>
+    <div id="menu">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="subscribe.html">Subscribe</a>
-    </nav>
+    </div>
+    <a href="javascript:void(0);" id="hamburger" onclick="goHamburger()">
+      <img src="Images/menu-outline.svg" alt="hamburger menu">
+    </a>
     <div id="blogName">
-      Bold and underlined
+      Bold & Underlined
     </div>
     <div id="social">
       <a href="https://www.facebook.com/samantha.paul.315/timeline?lst=68602629%3A505774288%3A1591573312" target="_blank">
@@ -125,23 +128,8 @@
     <!-- TODO: Add 'Older Posts' & 'Newer Posts' buttons -->
   </footer>
 
-  <script>
-    window.onscroll = function () { stickyNav() };
+  <script src="app.js"></script>
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    var blogName = document.getElementById("blogName");
-
-    function stickyNav() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        blogName.style.color = "black";
-      } else {
-        navbar.classList.remove("sticky");
-        blogName.style.color = "rgba(211, 211, 211, 0.95)";
-      }
-    }
-  </script>
 </body>
 
 </html>

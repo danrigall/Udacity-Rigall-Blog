@@ -18,6 +18,7 @@
 
 .card h3 {
   font-size: inherit;
+  text-align: inherit;
   text-overflow: ellipsis;
   color: #242222;
   padding: 3px 0px;
