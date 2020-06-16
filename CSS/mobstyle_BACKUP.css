@@ -1,0 +1,210 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 30px auto auto auto;
+  grid-template-areas:
+  "hd"
+  "nav"
+  "sd"
+  "main"
+  "ft";
+  font-family: Avenir Next, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  max-width: 480px;
+}
+/* SMALL screen ends at 480px */
+
+@import url("headstyle.css");
+/* header {
+  grid-area: hd;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+h1 {
+  letter-spacing: 10px;
+  margin: 3px 0px;
+  font-size: 50px;
+  font-weight: 640;
+  line-height: 100%;
+}
+
+h2 {
+  font-weight: 250;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #b1b1b1;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h4 {
+  margin: auto;
+}
+
+h5 {
+  margin: auto;
+  font-size: 1.25em;
+} */
+
+@import url("mobnav.css");
+/* #navbar {
+  grid-area: nav;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  background-color: rgba(211, 211, 211, 0.95);
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+  flex-wrap: wrap;
+}
+
+#menu {
+  background: lightgray;
+  box-shadow: rgb(92, 25, 47) 1px 1px 6px;
+  order: 5;
+  display: none;
+}
+
+#menu a {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #242222 !important;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  width: 80px;
+  text-align: center;
+}
+
+#blogName {
+  color: black;
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-weight: 640;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  order: 2;
+  opacity: 0;
+}
+
+#hamburger {
+  padding: 0px !important;
+  height: 100%;
+  order: 1;
+  margin-right: auto;
+}
+
+#navbar a:hover {
+  background: whitesmoke;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+
+#hamburger img {
+  height: 100%;
+  padding: 0px 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + body {
+  padding-top: 90px;
+}
+
+#social {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: fit-content;
+  align-items: center;
+  order: 3;
+}
+
+#social img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+#social a {
+  padding: 4px 10px;
+} */
+
+@import url("mobAside.css");
+/* aside {
+  grid-area: sd;
+  font-style: italic;
+  background-color: whitesmoke;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about img {
+  height: 100px;
+}
+
+.about p {
+  margin: 0px;
+  font-size: 15px;
+  flex-basis: 66%;
+  flex-grow: 1;
+  padding: 5px;
+} */
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+@import url("cardstyle.css");
+
+footer {
+  grid-area: ft;
+  text-align: center;
+  padding: 20px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:active {
+  color: black;
+}

@@ -1,24 +1,51 @@
-body {
-  display: grid;
-  grid-template-columns: auto 200px;
-  grid-template-rows: auto 30px auto;
-  grid-template-areas:
-      "hd hd"
-      "nav nav"
-      "main sd"
-      "ft ft";
-  font-family: Avenir Next, Arial, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  min-width: 800px;
+@import url("bignav.css") screen and (min-width: 481px);
+@import url("bigAside.css") screen and (min-width: 481px);
+@import url("mobnav.css") screen and (max-width: 480px);
+@import url("mobAside.css") screen and (max-width: 480px);
+@import url("cardstyle.css");
+@import url("headstyle.css");
+
+@media (max-width: 480px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 30px auto auto auto;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "sd"
+    "main"
+    "ft";
+    font-family: Avenir Next, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 481px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: auto 30px auto;
+    grid-template-areas:
+        "hd hd"
+        "nav nav"
+        "main sd"
+        "ft ft";
+    font-family: Avenir Next, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-width: 800px;
+  }
 }
 /* LARGE screen starts at 700px */
 
-header {
+/* header {
   grid-area: hd;
   text-align: center;
   text-transform: uppercase;
-      padding: 10px;
+  padding: 10px;
 }
 
 h1 {
@@ -52,9 +79,9 @@ h4 {
 h5 {
   margin: auto;
   font-size: 1.25em;
-}
+} */
 
-#navbar {
+/* #navbar {
   grid-area: nav;
   width: 100%;
   height: 30px;
@@ -85,15 +112,12 @@ h5 {
   font-weight: 640;
   text-transform: uppercase;
   text-align: center;
-  width: fit-content;
   margin: auto;
   white-space: nowrap;
-  display: none;
+  opacity: 0;
 }
 
 #hamburger {
-  padding: 0px !important;
-  height: 100%;
   display: none;
 }
 
@@ -136,9 +160,9 @@ h5 {
 
 #social a {
   padding: 0px 15px;
-}
+} */
 
-aside {
+/* aside {
   grid-area: sd;
   font-style: italic;
   background-color: whitesmoke;
@@ -159,7 +183,7 @@ aside {
 
 .about p {
   font-size: 15px;
-}
+} */
 
 main {
   grid-area: main;
@@ -168,7 +192,7 @@ main {
   padding: 20px;
 }
 
-.card {
+/* .card {
   border: solid rgb(92, 25, 47);
   border-radius: 10px;
   box-shadow: 3px 3px 2px lightgray;
@@ -215,7 +239,7 @@ main {
   width: 100%;
   text-shadow: -1px 0 2px whitesmoke, 0 1px 2px whitesmoke, 1px 0 2px whitesmoke, 0 -1px 2px whitesmoke;
   background-image: linear-gradient(to right, white 0%);
-}
+} */
 
 footer {
   grid-area: ft;

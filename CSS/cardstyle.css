@@ -1,0 +1,48 @@
+.card {
+  border: solid rgb(92, 25, 47);
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px lightgray;
+  height: 180px;
+  width: 100%;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.card:hover img {
+  opacity: 0.5;
+  transition: 0.1s;
+}
+
+.card h3 {
+  font-size: inherit;
+  text-overflow: ellipsis;
+  color: #242222;
+  padding: 3px 0px;
+  margin: 0px;
+  text-shadow: -1px 0 2px whitesmoke, 0 1px 2px whitesmoke, 1px 0 2px whitesmoke, 0 -1px 2px whitesmoke
+}
+
+.card p {
+  overflow: hidden;
+  color: #242222;
+  margin: 5px 0px;
+}
+
+.card img {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: blur(3px) grayscale(70%) opacity(0.9);
+}
+
+.date {
+  color: #242222;
+  width: 100%;
+  text-shadow: -1px 0 2px whitesmoke, 0 1px 2px whitesmoke, 1px 0 2px whitesmoke, 0 -1px 2px whitesmoke;
+  background-image: linear-gradient(to right, white 0%);
+}

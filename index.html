@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Sam Rigall Blog</title>
-  <link rel="stylesheet" href="CSS/mobstyle.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -121,32 +121,7 @@
   <footer>
     <a href="#top">Back to top</a>
   </footer>
-  <script>
-    window.onscroll = function () { stickyNav() };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    var blogName = document.getElementById("blogName");
-
-    function stickyNav() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        blogName.style.opacity = "1";
-      } else {
-        navbar.classList.remove("sticky");
-        blogName.style.opacity = "0";
-      }
-    }
-// TODO: Make this hamburger menu work!!!
-    function goHamburger() {
-      var menu = document.getElementById("menu");
-      if (menu.style.display == "block") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "block";
-      }
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
