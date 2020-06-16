@@ -64,13 +64,13 @@ h5 {
   justify-content: space-between;
 }
 
-nav {
+#menu {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-nav a {
+#menu a {
   font-size: 12px;
   letter-spacing: 2px;
   color: #242222 !important;
@@ -90,17 +90,6 @@ nav a {
   white-space: nowrap;
   display: none;
 }
-
-/* #navbar a {
-  font-size: 12px;
-  letter-spacing: 2px;
-  display: block;
-  color: #242222;
-  background-color: rgba(211, 211, 211);
-  text-align: center;
-  padding: 8px 16px;
-  text-decoration: none;
-} */
 
 #hamburger {
   padding: 0px !important;
@@ -146,7 +135,7 @@ nav a {
 }
 
 #social a {
-  padding: 6px 15px;
+  padding: 0px 15px;
 }
 
 aside {

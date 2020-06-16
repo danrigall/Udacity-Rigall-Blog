@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Sam Rigall Blog</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/mobstyle.css">
 </head>
 
 <body>
@@ -15,16 +15,16 @@
     <h2>thoughts on living with purpose and passion</h2>
   </header>
   <div id="navbar">
-    <nav>
+    <div id="menu">
       <a class="active">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="subscribe.html">Subscribe</a>
-    </nav>
-    <button href="javascript:void(0);" id="hamburger" onclick="goHamburger()">
+    </div>
+    <a href="javascript:void(0);" id="hamburger" onclick="goHamburger()">
       <img src="Images/menu-outline.svg" alt="hamburger menu">
-    </button>
+    </a>
     <div id="blogName">
-      Bold and underlined
+      Bold & underlined
     </div>
     <div id="social">
       <a href="https://www.facebook.com/samantha.paul.315/timeline?lst=68602629%3A505774288%3A1591573312" target="_blank">
@@ -131,21 +131,21 @@
     function stickyNav() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        blogName.style.display = "initial";
+        blogName.style.opacity = "1";
       } else {
         navbar.classList.remove("sticky");
-        blogName.style.display = "none";
+        blogName.style.opacity = "0";
       }
     }
 // TODO: Make this hamburger menu work!!!
-    // function goHamburger() {
-    //   var nav = document.getElementsByClassName(".nav");
-    //   if (nav.style.display === "block") {
-    //     nav.style.display = "none";
-    //   } else {
-    //     nav.style.display = "block";
-    //   }
-    // }
+    function goHamburger() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display == "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
   </script>
 </body>
 
