@@ -20,6 +20,8 @@ body {
 h3 {
   letter-spacing: 0px;
   font-style: italic;
+  text-decoration: none;
+  border-bottom: solid black 1px;
 }
 
 main {
