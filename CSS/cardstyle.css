@@ -4,19 +4,44 @@
   box-shadow: 3px 3px 2px lightgray;
   height: 180px;
   width: 100%;
-  text-decoration: none;
+  /* text-decoration: none; */
   overflow: hidden;
   position: relative;
   padding: 10px;
   margin: 10px 0px;
+  background: #2f4f4f30;
 }
 
-.card:hover img {
-  opacity: 0.5;
-  transition: 0.1s;
+figure {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: auto;
+  margin-right: 10px;
 }
 
-.card h3 {
+figure img {
+  height: 90%;
+}
+
+figcaption {
+  font-size: x-small;
+  padding: 2px 8px;
+  text-align: left;
+  background: darkslategray;
+  color: white;
+  font-style: italic;
+  height: 10%;
+}
+
+.teaser {
+  overflow: hidden;
+}
+
+.teaser h3 {
   font-size: inherit;
   text-align: inherit;
   text-overflow: ellipsis;
@@ -26,24 +51,32 @@
   text-shadow: -1px 0 2px whitesmoke, 0 1px 2px whitesmoke, 1px 0 2px whitesmoke, 0 -1px 2px whitesmoke
 }
 
-.card p {
-  overflow: hidden;
-  color: #242222;
-  margin: 5px 0px;
-}
-
-.card img {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  filter: blur(3px) grayscale(70%) opacity(0.9);
-}
-
 .date {
   color: #242222;
   width: 100%;
   text-shadow: -1px 0 2px whitesmoke, 0 1px 2px whitesmoke, 1px 0 2px whitesmoke, 0 -1px 2px whitesmoke;
   background-image: linear-gradient(to right, white 0%);
+}
+
+.teaser p {
+  overflow: hidden;
+  color: #242222;
+  margin: 5px 0px;
+}
+
+.card button {
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: rgb(92, 25, 47);
 }

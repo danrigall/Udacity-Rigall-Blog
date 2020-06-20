@@ -40,8 +40,24 @@ main p {
   text-align: justify;
 }
 
-main img {
-  width: 100%
+figure {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: gray 0px 0px 5px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: x-small;
+  padding: 0px 8px;
+  text-align: right;
+  background: darkslategray;
+  color: white;
+  font-style: italic;
 }
 
 ul {
