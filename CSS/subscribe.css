@@ -4,7 +4,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 100vw;
   grid-template-rows: auto 30px auto;
   grid-template-areas:
       "hd"
@@ -39,6 +39,7 @@ form {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row-reverse;
+  margin: 1.5rem;
 }
 
 input[type=text] {
