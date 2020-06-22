@@ -4,7 +4,7 @@
 @import url("mobAside.css") screen and (max-width: 480px);
 @import url("cardstyle.css");
 @import url("headstyle.css");
-/* SMALL screen ends at 480px */
+
 @media (max-width: 480px) {
   body {
     display: grid;
@@ -22,7 +22,8 @@
     max-width: 480px;
   }
 }
-/* LARGE screen starts at 800px (goal) */
+/* TODO: Make a medium screen adaptation? */
+
 @media (min-width: 481px) {
   body {
     display: grid;
@@ -36,7 +37,7 @@
     font-family: Avenir Next, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    min-width: 800px;
+    min-width: 481px;
   }
 }
 

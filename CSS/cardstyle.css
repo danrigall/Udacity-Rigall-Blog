@@ -1,4 +1,5 @@
-@media (max-width: 480px) {
+
+@media (max-width: 799px) {
   .card {
     border: solid rgb(92, 25, 47);
     border-radius: 10px;
@@ -13,7 +14,7 @@
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 800px) {
   .card {
     border: solid rgb(92, 25, 47);
     border-radius: 10px;
