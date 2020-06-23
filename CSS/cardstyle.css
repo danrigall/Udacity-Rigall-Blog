@@ -19,7 +19,7 @@
     border: solid rgb(92, 25, 47);
     border-radius: 10px;
     box-shadow: 3px 3px 2px lightgray;
-    height: 200px;
+    height: 220px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -52,10 +52,9 @@ figcaption {
   background: darkslategray;
   color: white;
   font-style: italic;
-  /* height: 10%; */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .teaser {

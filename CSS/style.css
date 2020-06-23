@@ -22,7 +22,6 @@
     max-width: 480px;
   }
 }
-/* TODO: Make a medium screen adaptation? */
 
 @media (min-width: 481px) {
   body {
